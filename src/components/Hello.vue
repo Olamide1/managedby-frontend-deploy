@@ -100,7 +100,7 @@ export default {
         axios.post('managedby.herokuapp.com:80/api/login', {
         company_email: company_email,
         company_pin: password
-      }, options).then( res => {
+      },{ crossdomain: true }, options).then( res => {
         if (res.data.length == 0) {
           this.message = 'Email or password in-correct'
         } else {
