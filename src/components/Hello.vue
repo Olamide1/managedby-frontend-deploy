@@ -97,7 +97,9 @@ export default {
         this.message = 'Please fill in your data'
       } else {
         this.loginbtn = 'Loading...'
-        axios.post('managedby.herokuapp.com:80/api/login', {
+        var my_url = 'managedby.herokuapp.com:80/api/login'
+        var url = 'https://cors-anywhere.herokuapp.com${my_url}';
+        axios.post(url, {
         company_email: company_email,
         company_pin: password
       },{ crossdomain: true }, options).then( res => {
