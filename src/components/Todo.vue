@@ -119,7 +119,6 @@ export default {
             this.$router.push('/')
         },
         findMyRequest(){
-          headers.set('Content-Type', 'application/json')
           axios.post('managedby.herokuapp.com:80/api/myrequests',{ crossdomain: true }, {
                   request_by: this.company_email
           }).then( response => {
@@ -132,7 +131,6 @@ export default {
           })
       },
       findUndone() {
-          headers.set('Content-Type', 'application/json')
           axios.post('managedby.herokuapp.com:80/api/findundone',{ crossdomain: true },{
               company_name: this.company_name,
               status: 'todo'
@@ -144,7 +142,6 @@ export default {
           })
       },
       loadCompanyRequest() {
-            headers.set('Content-Type', 'application/json')
             axios.post('managedby.herokuapp.com:80/api/getcompanyrequest',{ crossdomain: true }, {
                     company_name: this.company_name
             }).then( resp => {
