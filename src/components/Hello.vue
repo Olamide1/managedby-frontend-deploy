@@ -97,7 +97,7 @@ export default {
         this.message = 'Please fill in your data'
       } else {
         this.loginbtn = 'Loading...'
-        axios.post('managedby.herokuapp.com/api/login', {
+        axios.post('http://managedby.herokuapp.com/api/login', {
         company_email: company_email,
         company_pin: password
       },{ crossdomain: true }, options).then( res => {
