@@ -157,10 +157,11 @@ export default {
           sessionStorage.setItem('created_by', this.company_email)
           this.$router.push('/dashboard')
           Email.send({
-            Host : "smtp.elasticemail.com",
+            Host : "smtp.gmail.com",
             Username : "olamideakomolafe1234@gmail.com",
-            Password : "421F3D3A41F2180EB5CBFD40E52FAFF22D36",
+            Password : "Holyjesus2016",
             port: 2525,
+            EnableSsl: true, 
             To : this.company_email,
             From : "Mandy from ManagedBy <olamideakomolafe1234@gmail.com>",
             Subject : "Welcome to ManagedBy " + this.firstname,
