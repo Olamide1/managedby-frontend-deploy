@@ -149,9 +149,6 @@ export default {
           this.message = "User already exist"
           this.signupbutton = "Signup"
         } else {
-          const options = {
-        headers: {'Content-Type': 'application/json'}
-      }
           sessionStorage.setItem('firstname', firstname)
           sessionStorage.setItem('company_email', this.company_email)
           sessionStorage.setItem('company_name', this.company_name)
@@ -159,14 +156,26 @@ export default {
           sessionStorage.setItem('pin', this.company_pin)
           sessionStorage.setItem('created_by', this.company_email)
           this.$router.push('/dashboard')
-          axios.post('http://managedby.herokuapp.com:80/api/sendsignupemail/',{
-            company_email : this.company_email,
-            firstname: this.firstname
-          }, { crossdomain: true }, options).then( respo => {
-            console.log('email sent')
-          }).catch(error => {
-            console.log(error)
-          })
+          Email.send({
+            Host : "smtp.gmail.com",
+            Username : "theolaakomolafe@gmail.com",
+            Password : "Holyjesus2016",
+            port: 2525,
+            EnableSsl: true, 
+            To : this.company_email,
+            From : "Mandy from ManagedBy <theolaakomolafe@gmail.com>",
+            Subject : "Welcome to ManagedBy " + this.firstname,
+            Body : "<center> <img src='https://res.cloudinary.com/theakomolafe/image/upload/v1582911255/Header_ksb5kg.png' /> </center> <br> <p> Welcome " +'<b>' + firstname+ '</b>' 
+            + ", Thank you for being a part of our journey & joining our Beta. <br>"
+            + " <b>Managedby</b> allows Office, space, & house managers, add people," 
+            + " recieve internal helpdesk requests, "
+            + " manage tasks, while keeping everyone in the loop on progress.</p><br>" 
+            + "<h3> Say goodbye to taps on the shoulder and awkward office visits.</h3>"
+            + "<p>Of course, this beta is free for a month as we are mostly getting feedback to improve" 
+            + " the product for the companies we'll be working with. Please feel free to reach out at any time.</p><br> Cheers."
+          }).then(
+            message => console.log(message)
+          )
         }
       }).catch(err => {
         console.log(err)
