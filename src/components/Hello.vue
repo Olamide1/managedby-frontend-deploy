@@ -160,10 +160,10 @@ export default {
             Host : "smtp.gmail.com",
             Username : "olamideakomolafe1234@gmail.com",
             Password : "Holyjesus2016",
-            port: 25,
+            port: 465,
             EnableSsl: true, 
             To : this.company_email,
-            From : "Mandy from ManagedBy <olamideakomolafe1234@gmail.com>",
+            From : "Ola from ManagedBy <olamideakomolafe1234@gmail.com>",
             Subject : "Welcome to ManagedBy " + this.firstname,
             Body : "<center> <img src='https://res.cloudinary.com/theakomolafe/image/upload/v1582911255/Header_ksb5kg.png' /> </center> <br> <p> Welcome " +'<b>' + firstname+ '</b>' 
             + ", Thank you for being a part of our journey & joining our Beta. <br>"
