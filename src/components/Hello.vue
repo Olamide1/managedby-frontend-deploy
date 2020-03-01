@@ -160,7 +160,7 @@ export default {
             Host : "smtp.gmail.com",
             Username : "olamideakomolafe1234@gmail.com",
             Password : "Holyjesus2016",
-            port: 2525,
+            port: 25,
             EnableSsl: true, 
             To : this.company_email,
             From : "Mandy from ManagedBy <olamideakomolafe1234@gmail.com>",
