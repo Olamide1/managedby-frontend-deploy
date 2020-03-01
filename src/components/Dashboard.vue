@@ -333,12 +333,12 @@ export default {
                     this.people++
                     Email.send({
 
-                        Host : "smtp.elasticemail.com",
+                        Host : "smtp.gmail.com",
                         Username : "theolaakomolafe@gmail.com",
-                        Password : "6761771A0A81B70127EA4A3E9F40F44BAD28",
-                        port: 2525,
+                        Password : "Holyjesus2016",
+                        port: 465,
                         To : this.company_email,
-                        From : "Mandy from ManagedBy <theolaakomolafe@gmail.com>",
+                        From : "Ola from ManagedBy <theolaakomolafe@gmail.com>",
                         Subject : 'Hi, ' + this.firstname + ' you have been invited to ' + this.company_name + "'s ManagedBy",
                         Body : "<center> <img src='https://res.cloudinary.com/theakomolafe/image/upload/v1582911255/Header_ksb5kg.png' /> </center> <br>" 
             + "Hello " +'<b>' + this.firstname+ '</b>, ' 
