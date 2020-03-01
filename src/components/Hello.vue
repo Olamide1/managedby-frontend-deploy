@@ -50,7 +50,7 @@
         <b-form-input placeholder="Company Email" v-model="company_email" type="email"></b-form-input>
         <b-form-input placeholder="Company Name" v-model="company_name"></b-form-input>
         <b-form-input placeholder="Company Industry eg: Fintech" v-model="industry"></b-form-input>
-        <b-form-input placeholder="Company size using a range (1-100)" v-model="company_size"></b-form-input>
+        <b-form-input placeholder="Company size (An approximation will do)" v-model="company_size"></b-form-input>
         <b-form-input placeholder="Office (Nairobi, Accra, HeadOffice)" v-model="office"></b-form-input>
     </b-form-group>
  <b-form-group>
