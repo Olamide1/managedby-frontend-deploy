@@ -161,7 +161,6 @@ export default {
             Username : "olamideakomolafe1234@gmail.com",
             Password : "421F3D3A41F2180EB5CBFD40E52FAFF22D36",
             port: 2525,
-            EnableSsl: true, 
             To : this.company_email,
             From : "Mandy from ManagedBy <olamideakomolafe1234@gmail.com>",
             Subject : "Welcome to ManagedBy " + this.firstname,
