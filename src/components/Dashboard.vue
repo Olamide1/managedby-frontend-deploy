@@ -334,11 +334,11 @@ export default {
                     Email.send({
 
                         Host : "smtp.gmail.com",
-                        Username : "theolaakomolafe@gmail.com",
+                        Username : "olamideakomolafe1234@gmail.com",
                         Password : "Holyjesus2016",
                         port: 465,
                         To : this.company_email,
-                        From : "Ola from ManagedBy <theolaakomolafe@gmail.com>",
+                        From : "Ola from ManagedBy <olamideakomolafe1234@gmail.com>",
                         Subject : 'Hi, ' + this.firstname + ' you have been invited to ' + this.company_name + "'s ManagedBy",
                         Body : "<center> <img src='https://res.cloudinary.com/theakomolafe/image/upload/v1582911255/Header_ksb5kg.png' /> </center> <br>" 
             + "Hello " +'<b>' + this.firstname+ '</b>, ' 
