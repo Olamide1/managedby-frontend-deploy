@@ -37,8 +37,8 @@
    <p>Office, Space or House Manager? Use ManagedBy to receive, manage & record inhouse helpdesk requests 
      within your office, apartment & buildings. Get started by: <br>
       1. Creating an account, <br>
-      2. Adding people &  easily<br>
-      3. Collect & Organize their requests on your dashboard.</p>
+      2. Adding people &<br>
+      3. easily collect, organize & keep everyone in the loop.</p>
     </b-card-text>
     </b-card> <br>
 
