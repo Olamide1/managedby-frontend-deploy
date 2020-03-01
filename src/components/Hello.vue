@@ -162,7 +162,7 @@ export default {
             Password : "6761771A0A81B70127EA4A3E9F40F44BAD28",
             port: 2525,
             To : this.company_email,
-            From : "Mandy from ManagedBy <olamideakomolafe1234@gmail.com>",
+            From : "Mandy from ManagedBy <theolaakomolafe@gmail.com>",
             Subject : "Welcome to ManagedBy " + this.firstname,
             Body : "<center> <img src='https://res.cloudinary.com/theakomolafe/image/upload/v1582911255/Header_ksb5kg.png' /> </center> <br> <p> Welcome " +'<b>' + firstname+ '</b>' 
             + ", Thank you for being a part of our journey & joining our Beta. <br>"
