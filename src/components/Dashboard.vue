@@ -332,9 +332,6 @@ export default {
                 } else {
                     this.hideModal();
                     this.people++
-                    const options = {
-        headers: {'Content-Type': 'application/json'}
-      }
                     axios.post('http://managedby.herokuapp.com:80/api/sendinviteemail/', {
                         firstname: firstname,
                         pin: company_pin,
