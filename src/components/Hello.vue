@@ -149,6 +149,9 @@ export default {
           this.message = "User already exist"
           this.signupbutton = "Signup"
         } else {
+          const options = {
+        headers: {'Content-Type': 'application/json'}
+      }
           sessionStorage.setItem('firstname', firstname)
           sessionStorage.setItem('company_email', this.company_email)
           sessionStorage.setItem('company_name', this.company_name)
