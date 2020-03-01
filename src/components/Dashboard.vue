@@ -215,7 +215,6 @@ export default {
             this.$router.push('/')
         },
         getCreatedBy () {
-            console.log(this.creator)
             const options = {
         headers: {'Content-Type': 'application/json'}
          }
