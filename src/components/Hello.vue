@@ -11,7 +11,6 @@
   <div class="card-body">
     <h5 class="card-title">Managedby Login</h5>
     <p class="card-text">Access your account to place or receive helpdesk requests within your space.</p>
-    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
   </div>
 </div>
   <br>
@@ -59,8 +58,8 @@
  <b-form-group>
     <b-form-input placeholder="Company Pin (4 digit pin that would provide access to your colleagues)" v-model="company_pin" type="password"></b-form-input>
   </b-form-group>
-      <b-button block variant="outline-dark" size="sm" @click="signup">{{signupbutton}}</b-button>
-    <h5 align="center" color="red">{{message}}</h5>
+      <b-button block variant="outline-dark" size="sm" @click="signup">{{signupbutton}}</b-button> <br>
+    <h6 align="center" color="red">{{message}}</h6>
   </form>
     <br>
 
@@ -132,13 +131,16 @@ export default {
       var company_size = this.company_size
       var password = this.company_pin
       var role = 'Admin'
-      this.signupbutton = 'Loading...'
       var office = this.office
       var creator = this.company_email
        const options = {
         headers: {'Content-Type': 'application/json'}
       }
-      axios.post('http://managedby.herokuapp.com:80/api/signup/', {
+      if(firstname == '' || lastname == '' || company_email == '' || company_name == '' || company_size== '' || password == '') {
+        this.message = 'Please fill details'
+      } else {
+         this.signupbutton = 'Loading...'
+        axios.post('http://managedby.herokuapp.com:80/api/signup/', {
         firstname: firstname,
         lastname: lastname,
         company_name: company_name,
@@ -185,6 +187,7 @@ export default {
       }).catch(err => {
         console.log(err)
       })
+      }
     }
   }
 }
