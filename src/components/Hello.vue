@@ -49,7 +49,7 @@
   </b-form-group>
 
     <b-form-group>
-        <b-form-input placeholder="Company Email" v-model="company_email" type="email"></b-form-input>
+        <b-form-input placeholder="Email" v-model="company_email" type="email"></b-form-input>
         <b-form-input placeholder="Company Name" v-model="company_name"></b-form-input>
         <b-form-input placeholder="Company Industry eg: Fintech" v-model="industry"></b-form-input>
         <b-form-input placeholder="Company size (An approximation will do)" v-model="company_size"></b-form-input>
@@ -92,7 +92,7 @@ export default {
   },
   methods: {
     login(){
-      var company_email = this.company_email
+      var company_email = this.company_email.toLowerCase()
       var password = this.company_pin
       const options = {
         headers: {'Content-Type': 'application/json'}
@@ -125,14 +125,14 @@ export default {
     signup(){
       var firstname = this.firstname
       var lastname = this.lastname
-      var company_email = this.company_email
+      var company_email = this.company_email.toLowerCase()
       var company_name = this.company_name
       var industry = this.industry
       var company_size = this.company_size
       var password = this.company_pin
       var role = 'Admin'
       var office = this.office
-      var creator = this.company_email
+      var creator = this.company_email.toLowerCase()
        const options = {
         headers: {'Content-Type': 'application/json'}
       }

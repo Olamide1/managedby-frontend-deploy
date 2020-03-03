@@ -309,7 +309,7 @@ export default {
             var lastname = this.lastname
             var role = 'User'
             var company_name = this.company_name
-            var company_email = this.company_email
+            var company_email = this.company_email.toLowerCase()
             var creator = this.creator
             var company_pin = this.pin
             var office = this.office
