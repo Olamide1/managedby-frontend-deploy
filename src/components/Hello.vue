@@ -174,9 +174,9 @@ export default {
             Subject : "Welcome to ManagedBy " + this.firstname,
             Body : "<center> <img src='https://res.cloudinary.com/theakomolafe/image/upload/v1582911255/Header_ksb5kg.png' /> </center> <br> <p> Welcome " +'<b>' + firstname+ '</b>' 
             + ", Thank you for being a part of our journey & joining our Beta. <br>"
-            + " <b>Managedby</b> allows Office, space, & house managers, add people," 
+            + " <b>Managedby</b> allows space managers to add people," 
             + " recieve internal helpdesk requests, "
-            + " manage tasks, while keeping everyone in the loop on progress.</p><br>" 
+            + " manage tasks, have records for compliance while keeping everyone in the loop on progress.</p><br>" 
             + "<h3> Say goodbye to taps on the shoulder and awkward office visits.</h3>"
             + "<p>Of course, this beta is free for a month as we are mostly getting feedback to improve" 
             + " the product for the companies we'll be working with. Please feel free to reach out at any time.</p><br> Cheers."
