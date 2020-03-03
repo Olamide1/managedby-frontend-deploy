@@ -56,7 +56,7 @@
                     <td>
                         <b-dropdown id="dropdown-1" dropright  variant="outline-dark">
                                 <b-dropdown-item>
-                  <button class="btn btn-outline-dark" @click="markstatus(todo._id, 'doing')">Doing</button>
+                  <button class="btn btn-outline-dark" @click="markstatus(todo._id, 'doing')">Assigned</button>
                   <button class="btn btn-outline-dark" @click="markstatus(todo._id, 'done')">Done</button>
                </b-dropdown-item>
                         </b-dropdown> 

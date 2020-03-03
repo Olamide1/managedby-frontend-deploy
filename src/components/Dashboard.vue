@@ -87,7 +87,7 @@
                 <td>{{request.category}}</td>
            <td>
                <span v-if="request.status == 'todo'" class="badge badge-danger">Todo</span>
-                <span v-else-if="request.status == 'doing'" class="badge badge-dark">Doing</span>
+                <span v-else-if="request.status == 'doing'" class="badge badge-dark">Assigned</span>
                 <span v-else class="badge badge-success"> Done</span>
            </td>
            <td align="center">
@@ -98,7 +98,7 @@
                  {{request.request}}
                </b-dropdown-header>
                <b-dropdown-item>
-                  <button class="btn btn-outline-dark" @click="markstatus(request._id, 'doing')">Doing</button>
+                  <button class="btn btn-outline-dark" @click="markstatus(request._id, 'doing')">Assigned</button>
                   <button class="btn btn-outline-dark" @click="markstatus(request._id, 'done')">Done</button>
                </b-dropdown-item>
             </b-dropdown></td>
@@ -152,7 +152,7 @@
             <tr>
                 <td>
                <span v-if="my_request.status == 'todo'" class="badge badge-danger">Todo</span>
-                <span v-else-if="my_request.status == 'doing'" class="badge badge-info">Doing</span>
+                <span v-else-if="my_request.status == 'doing'" class="badge badge-info">Assigned</span>
                 <span v-else class="badge badge-success">Done</span>
                 </td>
                 <td>{{my_request.area}}</td>
